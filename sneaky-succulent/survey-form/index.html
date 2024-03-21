@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="project-resources/project-styles.css">
+  </head>
+  <body>
+    <h1 id="title">Amphibian Appreciation Survey</h1>
+    <p id="description">So, you like amphibians?  Well, so do we!  Show your appreciation for amphibia with this short form!</p>
+    <form id="survey-form">
+      <fieldset>
+        <label for="name" id="name-label">Please enter your name:
+          <input id="name" type="text" placeholder="Name" required>
+        </label>
+        <label for="email" id="email-label">Please enter your email address:
+          <input id="email" type="email" placeholder="Email" required>
+        </label>
+        <label for="number" id="number-label">On a scale of 0-13, how would you rate your appreciation of amphibians?
+          <br>
+          <input type="number" id="number" min="0" max="13" placeholder="0-13">
+        </label>
+      </fieldset>
+      <fieldset>
+        <label for="dropdown">Do you own any amphibians?
+          <select id="dropdown">
+            <option disabled selected>----</option>
+            <option>Yes!</option>
+            <option>Not yet</option>
+            <option>I have in the past, but not currently</option>
+            <option>No, and I don't intend to</option>
+          </select>
+        </label>
+        What is your favorite order of amphibian?
+        <br>
+        <label for="frog"><input name="favorite" id="frog" value="frog" type="radio">Frogs & Toads (Anura)</label>
+        <label for="salamander"><input name="favorite" id="salamander" value="salamander" type="radio">Salamanders & Newts (Urodela)</label>
+        <label for="caecilian"><input name="favorite" id="caecilian" value="caecilian" type="radio">Caecilians (Gymnophiona)</label>
+        <br>
+        <div class="text">
+        <label for="likes">Tell us what you like about amphibians, no wrong answers!<textarea id="likes" placeholder="I like frogs because..."></textarea></label>
+        </div>
+        <hr>
+        <label for="verify"><input type="checkbox" value="verify" id="verify">I verify that I appreciate amphibians</label>
+        <br>
+        <label for="facts"><input type="checkbox" value="facts" id="facts">I would like to recieve amphibian facts via email</label>
+      </fieldset>
+      <label for="submit"><input type="submit" id="submit" value="Submit Form!"></label>
+    </form>
+  </body>
+</html>

@@ -1,0 +1,144 @@
+:root {
+    --succulent-light: #dbfca6;
+    --teracota: #a27247;
+    --succulent-dark: #177b34;
+    --succulent-pink: #d25299;
+    --text: #32050e;
+  }
+  
+  body {
+    margin: 0;
+    background-color: var(--succulent-light);
+    color: var(--text);
+  }
+  
+  /*Background image rule*/
+  body {
+    background-color: #daf8a8;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='16' viewBox='0 0 12 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M4 .99C4 .445 4.444 0 5 0c.552 0 1 .45 1 .99v4.02C6 5.555 5.556 6 5 6c-.552 0-1-.45-1-.99V.99zm6 8c0-.546.444-.99 1-.99.552 0 1 .45 1 .99v4.02c0 .546-.444.99-1 .99-.552 0-1-.45-1-.99V8.99z' fill='%23a27247' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+  }
+  
+  #navbar {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    background-color: var(--teracota);
+    border-bottom: 3px solid var(--succulent-pink);
+    border-radius: 0px 0px 5px 5px;
+    box-shadow: 0px 3px 5px var(--succulent-dark);
+  }
+  
+  #nav-list {
+    margin: 1rem auto;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1rem;
+  }
+  
+  #nav-list a {
+    padding-bottom: 0.25rem;
+    color: var(--succulent-light);
+    border-bottom: 3px solid var(--succulent-dark);
+    border-radius: 0px 0px 5px 5px;
+  }
+  
+  ul {
+    list-style: none;
+  }
+  
+  a {
+    color: var(--succulent-pink);
+    text-decoration: none;
+  }
+  
+  #displacer {
+    margin-bottom: 0.5rem;
+    position: relative;
+    top: 10vh;
+  }
+  
+  section {
+    margin: 0 0.5rem 0.5rem;
+    padding: 1rem;
+    background: var(--succulent-light);
+    border: 3px solid var(--succulent-pink);
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px var(--succulent-dark);
+    display: flex;
+  }
+  
+  #welcome-section {
+    height: 100vh;
+    text-align: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  #succulent-image {
+    width: 100%;
+    border: 3px solid var(--succulent-pink);
+    border-radius: 50%;
+    box-shadow: 0px 5px 5px var(--succulent-dark);
+  }
+  
+  #profiles-container {
+    width: 75%;
+    padding: 0.5rem;
+    border: 5px inset var(--succulent-pink);
+    border-radius: 50px;
+    box-shadow: 0px 5px 5px var(--succulent-dark);
+  }
+  
+  #profiles-container:active {
+    position: relative;
+    top: 1%;
+    border-style: outset;
+    box-shadow: 0px -5px 5px var(--succulent-dark);
+  }
+  
+  #projects {
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  
+  .project-tile {
+    width: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column-reverse;
+    column-gap: 0.5rem;
+  }
+  
+  .project-peek {
+    width: 100%;
+    border: 3px solid var(--succulent-pink);
+    border-radius: 5%;
+    box-shadow: 0px 5px 5px var(--succulent-dark);
+  }
+  
+  @media only screen and (min-width: 1250px) {
+  body {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  
+  #navbar {
+    background-color: #a27247;
+    background-image: url("data:image/svg+xml,%3Csvg width='42' height='44' viewBox='0 0 42 44' xmlns='http://www.w3.org/2000/svg'%3E%3Cg id='Page-1' fill='none' fill-rule='evenodd'%3E%3Cg id='brick-wall' fill='%23daf8a8' fill-opacity='0.4'%3E%3Cpath d='M0 0h42v44H0V0zm1 1h40v20H1V1zM0 23h20v20H0V23zm22 0h20v20H22V23z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+    }
+  
+  #displacer {
+    grid-column: 2/2;
+  }
+  
+    #succulent-image {
+      width: 100%;
+    }
+  }
+  

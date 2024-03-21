@@ -1,0 +1,101 @@
+body {
+    background: linear-gradient(hsla(150, 80%, 30%, 0.8) 65%, black) no-repeat;
+    margin: 0;
+    color: #e9f5c3;
+    font-size: 1.5rem;
+  }
+  
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #e9f5c3;
+    text-align: center;
+  }
+  
+  nav {
+    position: fixed;
+    background-color: hsla(27, 73%, 45%, 0.95);
+    border: 2px inset hsla(73, 100%, 48%, 0.95);
+    border-radius: 0 0 0 50px;
+    box-shadow: 10px 5px 3px hsla(73, 100%, 14%, 0.95);
+    font-size: 1rem;
+    display: flex;
+    align-self: flex-end;
+    flex-direction: row;
+  }
+  
+  nav li {
+    display: inline;
+    margin: 0.5rem;
+    list-style: none;
+  }
+  
+  nav > ul > li > a {
+    text-decoration: none;
+    color: #e9f5c3;
+  }
+  
+  #main {
+    width: 50%;
+    margin: 0 auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  }
+  
+  #img-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #image, img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 2rem;
+    border: 2px solid hsla(73, 100%, 48%, 0.95);
+    box-shadow: 10px 5px 3px hsla(73, 100%, 14%, 0.95);
+    border-radius: 25px;
+  }
+  
+  #img-caption {
+    text-align: center;
+  }
+  
+  #tribute-info {
+    margin: 1rem;
+    padding: 1rem;
+  }
+  
+  .order {
+    width: 100%;
+    margin: 2rem;
+    padding: 0.5rem;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  #gymnophiona {
+    align-self: center;
+  }
+  
+  footer {
+    text-align: center;
+    font-size: 1.1rem;
+    margin: 1rem;
+  }
+  
+  /*TODO: 
+  *Line up order text and main text
+  *Change the color of nav links ***
+  *Make site more readable ***
+  *Bump up font size ***
+  */

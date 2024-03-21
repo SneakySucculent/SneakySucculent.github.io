@@ -1,0 +1,35 @@
+/*Making the preview work*/
+body {
+    height: 98%;
+    width: 98%;
+    padding: 0;
+    background: linear-gradient(hsla(140,65%,50%,0.8), hsla(200, 60%,20%,0.8));
+  }
+  
+  input, select, textarea {
+    display: block;
+    margin: 0.5rem;
+  }
+  
+  input[name="favorite"], input[type="checkbox"] {
+    display: inline;
+  }
+  
+  /*Making it look nice!*/
+  h1 {
+    margin: 0 auto;
+  }
+  
+  p {
+    text-align: center;
+  }
+  
+  .text {
+    margin-top: 0.5rem;
+  }
+  
+  input[type="submit"] {
+    margin: 0.5rem auto;
+  }
+  
+  
